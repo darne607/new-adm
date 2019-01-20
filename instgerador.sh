@@ -64,7 +64,7 @@ wget -O $HOME/$arqx ${IP}:81/${REQUEST}/${arqx} > /dev/null 2>&1 && echo -e "\03
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
 done
 [[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 &> /dev/null
-mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
+[[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
 apt-get install bc -y &>/dev/null
 apt-get install screen -y &>/dev/null
 apt-get install nano -y &>/dev/null
